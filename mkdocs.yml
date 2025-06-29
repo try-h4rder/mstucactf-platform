@@ -1,4 +1,5 @@
-site_name: "MSTUCA CTF"
+site_name:  "MSTUCA CTF"
+site_url:   "https://try-h4rder.github.io/mstucactf-platform/"
 nav:
   - Home:   "index.md"
   - About:  "about.md"
