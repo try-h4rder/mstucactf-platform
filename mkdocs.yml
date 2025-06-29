@@ -15,7 +15,8 @@ theme:
     - navigation.instant
     - navigation.instant.progress
   icon:
-    repo:   "fontawesome/brands/github"
+    logo:     "fontawesome/brands/font-awesome"
+    repo:     "fontawesome/brands/github"
   language: "ru"
 
 extra:
