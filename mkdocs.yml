@@ -1,10 +1,16 @@
 site_name:  "MSTUCA CTF"
 site_url:   "https://try-h4rder.github.io/mstucactf-platform/"
 
+repo_url:   "https://github.com/try-h4rder/mstucactf-platform/"
+repo_name:  "mstucactf-platform"
+
 nav:
   - Home:   "index.md"
   - About:  "about.md"
 
 theme:
   name:     "material"
+
+  icon:
+    repo:   "fontawesome/brands/github"
   language: "ru"
