@@ -21,6 +21,21 @@ theme:
     logo:     "fontawesome/brands/font-awesome"
     repo:     "fontawesome/brands/github"
   language: "ru"
+  palette:
+
+    # Palette toggle for light mode
+    - media:  "(prefers-color-scheme: light)"
+      scheme: "default"
+      toggle:
+        icon: "material/weather-night"
+        name: "Включить тёмный режим"
+
+    # Palette toggle for dark mode
+    - media:  "(prefers-color-scheme: dark)"
+      scheme: "slate"
+      toggle:
+        icon: "material/weather-sunny"
+        name: "Включить светлый режим"
 
 extra:
   social:
