@@ -14,3 +14,9 @@ theme:
   icon:
     repo:   "fontawesome/brands/github"
   language: "ru"
+
+extra:
+  social:
+    - icon: "fontawesome/brands/telegram"
+      link: "https://t.me/+_41cl3oc8xFmMGYy"
+      name: "t.me"
