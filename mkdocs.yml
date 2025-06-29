@@ -15,6 +15,7 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
+    - navigation.top
   icon:
     logo:     "fontawesome/brands/font-awesome"
     repo:     "fontawesome/brands/github"
