@@ -1,4 +1,7 @@
 site_name: "MSTUCA CTF"
+nav:
+  - Home:   "index.md"
+  - About:  "about.md"
 theme:
   name: "material"
   # color_mode: "auto"
