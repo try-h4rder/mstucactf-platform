@@ -1,10 +1,10 @@
 site_name:  "MSTUCA CTF"
 site_url:   "https://try-h4rder.github.io/mstucactf-platform/"
+
 nav:
   - Home:   "index.md"
   - About:  "about.md"
+
 theme:
-  name: "material"
-  # color_mode: "auto"
-  # locale: ru
-  # user_color_mode_toggle: true
+  name:     "material"
+  language: "ru"
