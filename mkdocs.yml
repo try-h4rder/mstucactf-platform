@@ -1,0 +1,46 @@
+site_name:  "MSTUCA CTF"
+site_url:   "https://try-h4rder.github.io/mstucactf-platform/"
+
+repo_url:   "https://github.com/try-h4rder/mstucactf-platform/"
+repo_name:  "mstucactf-platform"
+
+nav:
+  - Home:   "index.md"
+  - About:  "about.md"
+
+theme:
+  name:     "material"
+
+  favicon:  "images/font-awesome-brands-solid.svg"
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.top
+  icon:
+    logo:     "fontawesome/brands/font-awesome"
+    repo:     "fontawesome/brands/github"
+  language: "ru"
+  palette:
+
+    # Palette toggle for light mode
+    - media:  "(prefers-color-scheme: light)"
+      scheme: "default"
+      toggle:
+        icon: "material/weather-night"
+        name: "Включить тёмный режим"
+
+    # Palette toggle for dark mode
+    - media:  "(prefers-color-scheme: dark)"
+      scheme: "slate"
+      toggle:
+        icon: "material/weather-sunny"
+        name: "Включить светлый режим"
+
+extra:
+  social:
+    - icon: "fontawesome/brands/telegram"
+      link: "https://t.me/+_41cl3oc8xFmMGYy"
+      name: "t.me"
+
+copyright: Copyright &copy; 2025 Aslan Ashnokov
