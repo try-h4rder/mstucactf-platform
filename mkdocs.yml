@@ -5,8 +5,15 @@ repo_url:   "https://github.com/try-h4rder/mstucactf-platform/"
 repo_name:  "mstucactf-platform"
 
 nav:
-  - Home:   "index.md"
-  - About:  "about.md"
+  - Home: "index.md"
+  - Start:
+    - "Ведение заметок":                    "start/Note_taking.md"
+    - "Знакомство с ИБ и CTF":              "start/Intro_to_IS_and_CTF.md"
+    - "Развёртывание ВМ для участия в CTF": "start/VM_Deployment_for_CTF.md"
+    - "Знакомство с ОС Linux":              "start/Intro_to_Linux.md"
+    - "Автоматизация решения CTF-задач":    "start/Automation_of_solving_CTF.md"
+    - "Участие в CTF":                      "start/Participation_in_CTF.md"
+  - About: "about.md"
 
 theme:
   name:     "material"
