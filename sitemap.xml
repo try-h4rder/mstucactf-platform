@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://try-h4rder.github.io/mstucactf-platform/</loc>
-         <lastmod>2025-07-01</lastmod>
+         <lastmod>2025-07-04</lastmod>
     </url>
     <url>
          <loc>https://try-h4rder.github.io/mstucactf-platform/about/</loc>
-         <lastmod>2025-07-01</lastmod>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/1-note_taking/</loc>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/2-intro_to_is_and_ctf/</loc>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/3-vm_install_for_ctf/</loc>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/4-intro_to_linux/</loc>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/5-automation/</loc>
+         <lastmod>2025-07-04</lastmod>
+    </url>
+    <url>
+         <loc>https://try-h4rder.github.io/mstucactf-platform/start/6-participation_in_ctf/</loc>
+         <lastmod>2025-07-04</lastmod>
     </url>
 </urlset>
