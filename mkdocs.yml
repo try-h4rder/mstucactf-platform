@@ -50,6 +50,9 @@ extra:
       link: "https://t.me/+_41cl3oc8xFmMGYy"
       name: "t.me"
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: Copyright &copy; 2025 Aslan Ashnokov
 
 markdown_extensions:
