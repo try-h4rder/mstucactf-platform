@@ -50,7 +50,7 @@
 Этапы выполнения:
 
 1. Зарегистрируйтесь на тренировочной платформе [picoCTF](https://play.picoctf.org).
-2. Если вы не планируете решать задание в виртуальной машине, установите утилиту **[Wireshark]([https://www.wireshark.org/](https://www.wireshark.org/))**.
+2. Если вы не планируете решать задание в виртуальной машине, установите утилиту **[Wireshark](https://www.wireshark.org/)**.
 3. Выполните задание **[«Wireshark doo dooo do doo...»](https://play.picoctf.org/practice/challenge/115)**
 
 !!! tip "Подсказка"
