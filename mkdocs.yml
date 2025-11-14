@@ -7,12 +7,15 @@ repo_name:  "mstucactf-platform"
 nav:
   - Home: "index.md"
   - Start:
-    - "Ведение заметок":          "start/1-note_taking.md"
-    - "Знакомство с ИБ и CTF":    "start/2-intro_to_is_and_ctf.md"
-    - "Установка ВМ для CTF":     "start/3-vm_install_for_ctf.md"
-    - "Знакомство с ОС Linux":    "start/4-intro_to_linux.md"
-    - "Автоматизация":            "start/5-automation.md"
-    - "Участие в CTF":            "start/6-participation_in_ctf.md"
+    - "Знакомство с ИБ и CTF":  "start/intro_ctf.md"
+    - "Знакомство с Linux":     "start/linux.md"
+    - "Программирование":       "start/programming.md"
+    - "Криптография":           "start/crypto.md"
+    - "Сети":                   "start/network.md"
+    - "Веб-технологии":         "start/web.md"
+    - "Обратная разработка":    "start/reverse.md"
+    - "Бинарные уязвимости":    "start/pwn.md"
+    - "CTF — Task-based":        "start/task_based.md"
   - About: "about.md"
 
 theme:
@@ -47,7 +50,7 @@ theme:
 extra:
   social:
     - icon: "fontawesome/brands/telegram"
-      link: "https://t.me/+_41cl3oc8xFmMGYy"
+      link: "https://t.me/+CUAjrjoOB-Y2NDg6"
       name: "t.me"
 
 extra_css:
