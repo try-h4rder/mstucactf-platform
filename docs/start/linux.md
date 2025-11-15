@@ -5,6 +5,44 @@
 - подключаться к другим компьютерам в сети,
 - знать основные команды bash.
 
+<div class="player-switch">
+  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
+  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
+  <button class="tab-button" onclick="showPlayerTab('writeup')">Разбор</button>
+</div>
+
+<div id="meetup-tab" class="tab-content" style="display: block;">
+	<div class="media-container">
+		<iframe src="https://rutube.ru/play/embed/f28aafc8fc661e4646ade5fe042642e5/?skinColor=526cfe" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		</iframe>
+	</div>
+</div>
+
+<div id="slides-tab" class="tab-content" style="display: none;">
+	<div class="media-container">
+		<iframe src="https://docs.google.com/presentation/d/19zrHhi_zbH3PLxCtUiNfP2T3f-CLDd_H/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<div id="writeup-tab" class="tab-content" style="display: none;">
+	<div class="media-container">
+		<iframe src="https://rutube.ru/play/embed/850f6058cb015c48be5fa4b3dfed3b10/?skinColor=526cfe" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		</iframe>
+	</div>
+</div>
+
+<script>
+  function showPlayerTab(tab) {
+    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
+    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
+    document.getElementById("writeup-tab").style.display = (tab === "writeup") ? "block" : "none";
+
+    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
+  }
+</script>
+
 ## Кратко о Linux
 
 Linux — это семейство операционных систем, основанных на ядре «Linux», написанном на языке программирования C (Си). Операционная система управляет всеми ресурсами компьютера — процессами, памятью, файлами, устройствами — и обеспечивает интерфейсы взаимодействия между пользователем, программами и «железом». В основе Linux лежит идея открытого кода и модульности: ядро отвечает за базовые функции, а поверх него устанавливаются утилиты, библиотеки и графические оболочки. Вместе всё это формирует дистрибутив — полноценную операционную систему (например, Ubuntu, Debian, Kali Linux).
