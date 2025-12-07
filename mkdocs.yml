@@ -47,6 +47,10 @@ theme:
         icon: "material/weather-sunny"
         name: "Включить светлый режим"
 
+plugins:
+  - mkdocs_quiz:
+      auto_number: true
+
 extra:
   social:
     - icon: "fontawesome/brands/telegram"
