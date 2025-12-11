@@ -124,6 +124,10 @@ md5(str(random_year).encode()).hexdigest()[:8]
 from base64 import b64decode
 b64decode(b'0JTQuNC80LDRgSDRgdC60LDRh9Cw0Lkg0LHRg9GA0L8hISEh').decode()
 ```
+или прямо в терминале при помощи оболочки bash:
+```bash
+echo "0JTQuNC80LDRgSDRgdC60LDRh9Cw0Lkg0LHRg9GA0L8hISEh" | base64 -d
+```
 либо при помощи online-инструментов, например, [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true,false)).
 </quiz>
 
