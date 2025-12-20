@@ -61,6 +61,7 @@ extra:
 extra_css:
   - stylesheets/media-switcher.css
   - https://cdn.jsdelivr.net/npm/firebaseui@6.1.0/dist/firebaseui.css
+  - stylesheets/firebase-auth.css
 
 extra_javascript:
   - https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js
