@@ -26,7 +26,7 @@ function renderUserHeader() {
 
   auth.onAuthStateChanged(user => {
     if (user) {
-      title.textContent = user.displayName || user.email;
+      title.textContent = "Привет, " + (user.displayName || user.email) + "!";
     }
   });
 }
@@ -45,15 +45,3 @@ document.addEventListener("DOMContentLoaded", () => {
   renderUserHeader();
   initFirebaseUI();
 });
-
-let lastUrl = location.href;
-new MutationObserver(() => {
-  const url = location.href;
-  if (url !== lastUrl) {
-    lastUrl = url;
-    setTimeout(() => {
-      renderUserHeader();
-      initFirebaseUI();
-    }, 100);
-  }
-}).observe(document, { subtree: true, childList: true });

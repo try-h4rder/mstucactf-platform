@@ -70,6 +70,8 @@ extra_javascript:
   - javascripts/firebase-auth.js
   - javascripts/firebase-send-quiz.js
   - javascripts/firebase-sync-quiz.js
+  - javascripts/firebase-draw-scoreboard.js
+  - javascripts/spa-observer.js
 
 copyright: Copyright &copy; 2025 Aslan Ashnokov
 
