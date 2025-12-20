@@ -61,13 +61,15 @@ extra:
 extra_css:
   - stylesheets/media-switcher.css
   - https://cdn.jsdelivr.net/npm/firebaseui@6.1.0/dist/firebaseui.css
-  - stylesheets/firebase-auth.css
 
 extra_javascript:
   - https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js
   - https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js
+  - https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore-compat.js
   - https://cdn.jsdelivr.net/npm/firebaseui@6.1.0/dist/firebaseui.js
   - javascripts/firebase-auth.js
+  - javascripts/firebase-send-quiz.js
+  - javascripts/firebase-sync-quiz.js
 
 copyright: Copyright &copy; 2025 Aslan Ashnokov
 
