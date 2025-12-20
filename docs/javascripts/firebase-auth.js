@@ -17,7 +17,7 @@ const uiConfig = {
   signInOptions: [
     firebase.auth.EmailAuthProvider.PROVIDER_ID
   ],
-  signInSuccessUrl: "/"
+  signInSuccessUrl: "/mstucactf-platform/"
 };
 
 function renderUserHeader() {
