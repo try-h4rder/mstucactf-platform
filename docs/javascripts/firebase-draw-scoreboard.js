@@ -15,13 +15,24 @@ function loadscoreboard() {
 
       snapshot.forEach(doc => {
         const data = doc.data();
+        
         const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td>${rank}</td>
-          <td>${data.displayName || "Unknown"}</td>
-          <td>${data.totalScore || 0}</td>
-        `;
+
+        const tdRank = document.createElement("td");
+        tdRank.textContent = rank;
+
+        const tdName = document.createElement("td");
+        tdName.textContent = data.displayName || data.email || "Anonymous";
+
+        const tdScore = document.createElement("td");
+        tdScore.textContent = data.totalScore || 0;
+
+        tr.appendChild(tdRank);
+        tr.appendChild(tdName);
+        tr.appendChild(tdScore);
+
         scoreboardTable.appendChild(tr);
+
         rank++;
       });
 
