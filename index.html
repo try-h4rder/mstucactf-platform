@@ -53,8 +53,6 @@
     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firebaseui@6.1.0/dist/firebaseui.css">
     
-      <link rel="stylesheet" href="stylesheets/firebase-auth.css">
-    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -445,6 +443,17 @@
     <span class="md-ellipsis">
       
         Как проходить курс?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рейтинг пользователей
       
     </span>
   </a>
@@ -903,6 +912,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Рейтинг пользователей
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1003,7 +1023,22 @@
 <li><strong>Низкий порог вхождения</strong>. Курс включает обучение самым базовым навыкам и не требует предварительной подготовки.</li>
 </ul>
 <h2 id="_6">Как проходить курс?</h2>
-<p>Курс состоит из блоков, поделённых на разделы. Каждый раздел включает теоретическую выкладку и может содержать задания.</p><style type="text/css">.quiz {
+<p>Курс состоит из блоков, поделённых на разделы. Каждый раздел включает теоретическую выкладку и может содержать задания.</p>
+<h2 id="_7">Рейтинг пользователей</h2>
+<div id="quiz-scoreboard">
+  <table id="scoreboard-table">
+    <thead>
+      <tr>
+        <th>Место</th>
+        <th>Пользователь</th>
+        <th>Баллы</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="3">Загрузка...</td></tr>
+    </tbody>
+  </table>
+</div><style type="text/css">.quiz {
   border: 1px solid black;
   padding: 1rem;
   margin: 1rem 0;
@@ -2306,9 +2341,19 @@ document.addEventListener("DOMContentLoaded", function() {
       
         <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
       
+        <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore-compat.js"></script>
+      
         <script src="https://cdn.jsdelivr.net/npm/firebaseui@6.1.0/dist/firebaseui.js"></script>
       
         <script src="javascripts/firebase-auth.js"></script>
+      
+        <script src="javascripts/firebase-send-quiz.js"></script>
+      
+        <script src="javascripts/firebase-sync-quiz.js"></script>
+      
+        <script src="javascripts/firebase-draw-scoreboard.js"></script>
+      
+        <script src="javascripts/spa-observer.js"></script>
       
     
   </body>
