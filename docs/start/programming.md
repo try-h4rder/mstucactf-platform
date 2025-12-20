@@ -10,7 +10,7 @@
 
 <div id="meetup-tab" class="tab-content" style="display: block;">
 	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/1e25904fd4828c00dd110cd4d6df9ead/?skinColor=526cfe" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		<iframe src="https://rutube.ru/play/embed/1e25904fd4828c00dd110cd4d6df9ead/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
 		</iframe>
 	</div>
 </div>

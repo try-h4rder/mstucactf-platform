@@ -13,7 +13,7 @@
 
 <div id="meetup-tab" class="tab-content" style="display: block;">
 	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/f28aafc8fc661e4646ade5fe042642e5/?skinColor=526cfe" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		<iframe src="https://rutube.ru/play/embed/f28aafc8fc661e4646ade5fe042642e5/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
 		</iframe>
 	</div>
 </div>
@@ -27,7 +27,7 @@
 
 <div id="writeup-tab" class="tab-content" style="display: none;">
 	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/850f6058cb015c48be5fa4b3dfed3b10/?skinColor=526cfe" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		<iframe src="https://rutube.ru/play/embed/850f6058cb015c48be5fa4b3dfed3b10/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
 		</iframe>
 	</div>
 </div>
