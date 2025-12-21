@@ -1,6 +1,35 @@
 # Веб-технологии
 **Цель раздела** — познакомиться с основами **веб-технологий** и принципами работы **протокола HTTP**.
 
+<div class="player-switch">
+  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
+  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
+</div>
+
+<div id="meetup-tab" class="tab-content" style="display: block;">
+	<div class="media-container">
+		<iframe src="https://rutube.ru/play/embed/60447e44e6ea3de609144e60c10b5d7d/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		</iframe>
+	</div>
+</div>
+
+<div id="slides-tab" class="tab-content" style="display: none;">
+	<div class="media-container">
+		<iframe src="https://docs.google.com/presentation/d/1JvcUvzKqXYwGm5etfrOYvKnxyuZwh5wB/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<script>
+  function showPlayerTab(tab) {
+    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
+    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
+
+    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
+  }
+</script>
+
 ## Web
 
 Современный веб основан на **клиент-серверной архитектуре**, где клиент (обычно браузер) отправляет запросы к серверу, а сервер отвечает, передавая нужные данные. Основой взаимодействия между ними является протокол **HTTP (HyperText Transfer Protocol)** — прикладной протокол передачи гипертекста, то есть веб-страниц, изображений, скриптов и других ресурсов. HTTP определяет структуру запросов и ответов, а также правила обмена данными между браузером и сервером.
