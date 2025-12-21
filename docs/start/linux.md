@@ -5,43 +5,34 @@
 - подключаться к другим компьютерам в сети,
 - знать основные команды bash.
 
-<div class="player-switch">
-  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
-  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
-  <button class="tab-button" onclick="showPlayerTab('writeup')">Разбор</button>
-</div>
+=== "Встреча"
 
-<div id="meetup-tab" class="tab-content" style="display: block;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/f28aafc8fc661e4646ade5fe042642e5/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/f28aafc8fc661e4646ade5fe042642e5/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
-<div id="slides-tab" class="tab-content" style="display: none;">
-	<div class="media-container">
-		<iframe src="https://docs.google.com/presentation/d/19zrHhi_zbH3PLxCtUiNfP2T3f-CLDd_H/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
-		</iframe>
-	</div>
-</div>
+=== "Презентация"
 
-<div id="writeup-tab" class="tab-content" style="display: none;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/850f6058cb015c48be5fa4b3dfed3b10/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://docs.google.com/presentation/d/19zrHhi_zbH3PLxCtUiNfP2T3f-CLDd_H/embed?start=false&loop=false&delayms=3000"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
 
-<script>
-  function showPlayerTab(tab) {
-    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
-    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
-    document.getElementById("writeup-tab").style.display = (tab === "writeup") ? "block" : "none";
+=== "Разбор"
 
-    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
-  }
-</script>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/850f6058cb015c48be5fa4b3dfed3b10/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
 ## Кратко о Linux
 

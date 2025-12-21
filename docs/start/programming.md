@@ -3,34 +3,24 @@
 
 **Рекомендация автора** — использовать в качестве инструмента автоматизации язык программирования *Python*.
 
-<div class="player-switch">
-  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
-  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
-</div>
+=== "Встреча"
 
-<div id="meetup-tab" class="tab-content" style="display: block;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/1e25904fd4828c00dd110cd4d6df9ead/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/1e25904fd4828c00dd110cd4d6df9ead/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
-<div id="slides-tab" class="tab-content" style="display: none;">
-	<div class="media-container">
-		<iframe src="https://docs.google.com/presentation/d/1o9o-SvljQC39_aCusIA9QKEmnqj0py9o/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
-		</iframe>
-	</div>
-</div>
+=== "Презентация"
 
-<script>
-  function showPlayerTab(tab) {
-    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
-    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
-
-    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
-  }
-</script>
+    <div class="media-container">
+      <iframe src="https://docs.google.com/presentation/d/1o9o-SvljQC39_aCusIA9QKEmnqj0py9o/embed?start=false&loop=false&delayms=3000"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
 
 ## Автоматизация
 

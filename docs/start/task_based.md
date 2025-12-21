@@ -1,16 +1,15 @@
 # CTF — Task-based
 **Цель раздела** — начать практиковаться в решении реальных заданий CTF.
 
-<div class="player-switch">
-  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
-</div>
+=== "Встреча"
 
-<div id="meetup-tab" class="tab-content" style="display: block;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/f363f1cfeddc908743dec1a13bb3cb66/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/f363f1cfeddc908743dec1a13bb3cb66/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
 ## Регистрация
 

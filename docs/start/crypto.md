@@ -5,43 +5,34 @@
 - освоить различные виды представления информации и способы её преобразования,
 - познакомиться с онлайн-площадками для практики в криптографии.
 
-<div class="player-switch">
-  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
-  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
-  <button class="tab-button" onclick="showPlayerTab('writeup')">Разбор</button>
-</div>
+=== "Встреча"
 
-<div id="meetup-tab" class="tab-content" style="display: block;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/11715f7858c2906c021584099f863a7f/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/11715f7858c2906c021584099f863a7f/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
-<div id="slides-tab" class="tab-content" style="display: none;">
-	<div class="media-container">
-		<iframe src="https://docs.google.com/presentation/d/1KQjJuJQmots4zxHQgqrKzhhNO_IENBWs/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
-		</iframe>
-	</div>
-</div>
+=== "Презентация"
 
-<div id="writeup-tab" class="tab-content" style="display: none;">
-	<div class="media-container">
-		<iframe src="https://rutube.ru/play/embed/9128b66339c20a5d6a1d9d93d72e9264/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-		</iframe>
-	</div>
-</div>
+    <div class="media-container">
+      <iframe src="https://docs.google.com/presentation/d/1KQjJuJQmots4zxHQgqrKzhhNO_IENBWs/embed?start=false&loop=false&delayms=3000"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
 
-<script>
-  function showPlayerTab(tab) {
-    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
-    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
-    document.getElementById("writeup-tab").style.display = (tab === "writeup") ? "block" : "none";
+=== "Разбор"
 
-    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
-  }
-</script>
+    <div class="media-container">
+      <iframe src="https://rutube.ru/play/embed/9128b66339c20a5d6a1d9d93d72e9264/?skinColor=4051b5"
+              frameborder="0"
+              allow="clipboard-write; autoplay"
+              allowfullscreen>
+      </iframe>
+    </div>
 
 ## Кратко о криптографии
 
