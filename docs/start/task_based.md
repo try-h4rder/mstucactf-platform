@@ -1,6 +1,17 @@
 # CTF — Task-based
 **Цель раздела** — начать практиковаться в решении реальных заданий CTF.
 
+<div class="player-switch">
+  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
+</div>
+
+<div id="meetup-tab" class="tab-content" style="display: block;">
+	<div class="media-container">
+		<iframe src="https://rutube.ru/play/embed/f363f1cfeddc908743dec1a13bb3cb66/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		</iframe>
+	</div>
+</div>
+
 ## Регистрация
 
 [**CTFtime**](https://ctftime.org/) — основная платформа для поиска и регистрации на текущие и будущие CTF-соревнования. Здесь публикуются расписание, рейтинги команд и ссылки на прошедшие события. После окончания игр на сайте часто появляются решения (writeups), которые помогают разбирать задачи и учиться на чужом опыте.
