@@ -937,35 +937,27 @@
 
 <h1 id="_1">Обратная разработка</h1>
 <p><strong>Цель раздела</strong> — изучить основы обратной разработки как одного из направлений этичного хакинга.</p>
-<div class="player-switch">
-  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
-  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Встреча</label><label for="__tabbed_1_2">Презентация</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="media-container">
+  <iframe src="https://rutube.ru/play/embed/15d877d91f712ccbbb55fb7d686c9d0a/?skinColor=4051b5"
+          frameborder="0"
+          allow="clipboard-write; autoplay"
+          allowfullscreen>
+  </iframe>
+</div></p>
 </div>
-
-<div id="meetup-tab" class="tab-content" style="display: block;">
-    <div class="media-container">
-        <iframe src="https://rutube.ru/play/embed/15d877d91f712ccbbb55fb7d686c9d0a/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
-        </iframe>
-    </div>
+<div class="tabbed-block">
+<p><div class="media-container">
+  <iframe src="https://docs.google.com/presentation/d/1iVAT6o7mR1GzTWWtuclr6Ilv0bMm1U07/embed?start=false&loop=false&delayms=3000"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+</div></p>
 </div>
-
-<div id="slides-tab" class="tab-content" style="display: none;">
-    <div class="media-container">
-        <iframe src="https://docs.google.com/presentation/d/1iVAT6o7mR1GzTWWtuclr6Ilv0bMm1U07/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
-        </iframe>
-    </div>
 </div>
-
-<script>
-  function showPlayerTab(tab) {
-    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
-    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
-
-    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
-    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
-  }
-</script>
-
+</div>
 <h2 id="reverse-engineering">Reverse Engineering</h2>
 <p><strong>Обратная разработка (Reverse Engineering)</strong> — это процесс исследования уже скомпилированных программ с целью понять их внутреннее устройство и принцип работы. Она позволяет анализировать поведение программы как “чёрного ящика” — когда исходный код недоступен, но по реакции на входные данные можно восстановить логику её работы. Такой подход часто используется в кибербезопасности для изучения вредоносного ПО, защиты программ от взлома и часто встречается в заданиях CTF.</p>
 <p>Основой реверса является <strong>низкоуровневое программирование</strong>, когда специалист работает с машинными командами, регистрами процессора и памятью. Программы анализируются на уровне <strong>ассемблера</strong>, а не привычных высокоуровневых языков. Важную роль играют понятия <strong>стека</strong>, <strong>адресного пространства</strong> и <strong>инструкций процессора</strong>, основанных на принципах архитектуры фон Неймана.</p>
