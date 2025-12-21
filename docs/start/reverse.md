@@ -1,6 +1,35 @@
 # Обратная разработка
 **Цель раздела** — изучить основы обратной разработки как одного из направлений этичного хакинга.
 
+<div class="player-switch">
+  <button class="tab-button active" onclick="showPlayerTab('meetup')">Встреча</button>
+  <button class="tab-button" onclick="showPlayerTab('slides')">Презентация</button>
+</div>
+
+<div id="meetup-tab" class="tab-content" style="display: block;">
+	<div class="media-container">
+		<iframe src="https://rutube.ru/play/embed/15d877d91f712ccbbb55fb7d686c9d0a/?skinColor=4051b5" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+		</iframe>
+	</div>
+</div>
+
+<div id="slides-tab" class="tab-content" style="display: none;">
+	<div class="media-container">
+		<iframe src="https://docs.google.com/presentation/d/1iVAT6o7mR1GzTWWtuclr6Ilv0bMm1U07/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen>
+		</iframe>
+	</div>
+</div>
+
+<script>
+  function showPlayerTab(tab) {
+    document.getElementById("meetup-tab").style.display = (tab === "meetup") ? "block" : "none";
+    document.getElementById("slides-tab").style.display = (tab === "slides") ? "block" : "none";
+
+    document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+    document.querySelector(`.tab-button[onclick="showPlayerTab('${tab}')"]`).classList.add("active");
+  }
+</script>
+
 ## Reverse Engineering
 
 **Обратная разработка (Reverse Engineering)** — это процесс исследования уже скомпилированных программ с целью понять их внутреннее устройство и принцип работы. Она позволяет анализировать поведение программы как “чёрного ящика” — когда исходный код недоступен, но по реакции на входные данные можно восстановить логику её работы. Такой подход часто используется в кибербезопасности для изучения вредоносного ПО, защиты программ от взлома и часто встречается в заданиях CTF.
