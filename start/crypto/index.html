@@ -1107,6 +1107,10 @@
 <p>Для решения заданий вам понадобятся навыки программирования и работы в Linux, изученные ранее.</p>
 </div>
 <h2 id="_5">Тестирование</h2>
+<div class="admonition warning">
+<p class="admonition-title">Предупреждение</p>
+<p>Результаты тестирования сохраняются только для <strong>авторизованных</strong> пользователей.</p>
+</div>
 <div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-0">
                 <a href="#quiz-0" class="quiz-header-link">#</a>
                 <h4 class="quiz-number">Question 1</h4>
@@ -1115,15 +1119,15 @@
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span>
 <span class="n">md5</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">random_year</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()[:</span><span class="mi">8</span><span class="p">]</span>
 </code></pre></div>
-где <code>random_year</code> — это целое число, представляющее год.</p>
+где <code>random_year</code> — целое число от 0 до 9999.</p>
 <p>Вопрос — какое минимальное количество попыток потребуется для гарантированного подбора пароля методом полного перебора?</p>
                 </div>
                 <form action="javascript:void(0);" onsubmit="return false;">
-                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-0-0" ><label for="quiz-0-0">365</label></div><div><input type="radio" name="answer" value="1" id="quiz-0-1" ><label for="quiz-0-1">1 000 - 7</label></div><div><input type="radio" name="answer" value="2" id="quiz-0-2" correct><label for="quiz-0-2">10 000</label></div><div><input type="radio" name="answer" value="3" id="quiz-0-3" ><label for="quiz-0-3">16^8 (8-я степень)</label></div><div><input type="radio" name="answer" value="4" id="quiz-0-4" ><label for="quiz-0-4">2^128 (128-я степень)</label></div></fieldset>
+                    <fieldset><div><input type="radio" name="answer" value="0" id="quiz-0-0" ><label for="quiz-0-0">365</label></div><div><input type="radio" name="answer" value="1" id="quiz-0-1" ><label for="quiz-0-1">1 000</label></div><div><input type="radio" name="answer" value="2" id="quiz-0-2" correct><label for="quiz-0-2">10 000</label></div><div><input type="radio" name="answer" value="3" id="quiz-0-3" ><label for="quiz-0-3">16^8 (8-я степень)</label></div><div><input type="radio" name="answer" value="4" id="quiz-0-4" ><label for="quiz-0-4">2^128 (128-я степень)</label></div></fieldset>
                     <div class="quiz-feedback hidden"></div>
 
                 </form>
-                <section class="content hidden"><p>Пароль формируется как MD5-хэш от строкового представления года, обрезанный до 8 шестнадцатеричных символов. Однако пространство перебора определяется не всеми возможными 8-символьными шестнадцатеричными строками (16^8 вариантов), а диапазоном значений <code>random_year</code>. Если предположить, что год — это, например, число от 0 до 9 999 (практически все реальные даты), то максимальное количество уникальных паролей — 10 000.</p></section>
+                <section class="content hidden"><p>Пароль формируется как MD5-хэш от строкового представления года, обрезанный до 8 шестнадцатеричных символов. Однако пространство перебора определяется не всеми возможными 8-символьными шестнадцатеричными строками (16^8 вариантов), а диапазоном значений <code>random_year</code>. Таким образом, максимальное количество уникальных паролей — 10 000.</p></section>
             </div>
 
 <div class="quiz" data-show-correct="true" data-auto-submit="true" data-disable-after-submit="true" id="quiz-1">
