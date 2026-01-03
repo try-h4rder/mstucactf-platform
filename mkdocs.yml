@@ -5,8 +5,8 @@ repo_url:   "https://github.com/try-h4rder/mstucactf-platform/"
 repo_name:  "mstucactf-platform"
 
 nav:
-  - Home:   "index.md"
-  - Start:
+  - Главная:   "index.md"
+  - Начало:
     - "Знакомство с ИБ и CTF":  "start/intro_ctf.md"
     - "Знакомство с Linux":     "start/linux.md"
     - "Программирование":       "start/programming.md"
@@ -16,11 +16,12 @@ nav:
     - "Обратная разработка":    "start/reverse.md"
     - "Бинарные уязвимости":    "start/pwn.md"
     - "CTF — Task-based":        "start/task_based.md"
-  - Login:  "login.md"
-  - About:  "about.md"
+  - Вход:  "login.md"
+  - О проекте:  "about.md"
 
 theme:
   name:     "material"
+  language: "ru"
 
   favicon:  "images/font-awesome-brands-solid.svg"
   features:
@@ -31,9 +32,8 @@ theme:
   icon:
     logo:   "fontawesome/brands/font-awesome"
     repo:   "fontawesome/brands/github"
-  language: "ru"
+  
   palette:
-
     # Palette toggle for light mode
     - media:  "(prefers-color-scheme: light)"
       scheme: "default"
@@ -74,7 +74,7 @@ extra_javascript:
   - javascripts/firebase-draw-scoreboard.js
   - javascripts/spa-observer.js
 
-copyright: Copyright &copy; 2025 Aslan Ashnokov
+copyright: Copyright &copy; 2026 Aslan Ashnokov
 
 markdown_extensions:
   - admonition
