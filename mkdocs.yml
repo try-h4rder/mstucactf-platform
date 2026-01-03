@@ -53,6 +53,7 @@ plugins:
       custom_translations:
         ru: translations/ru.po
       auto_number: true
+      shuffle_answers: true
 
 extra:
   social:
