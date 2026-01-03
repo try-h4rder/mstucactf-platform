@@ -50,6 +50,8 @@ theme:
 
 plugins:
   - mkdocs_quiz:
+      custom_translations:
+        ru: translations/ru.po
       auto_number: true
 
 extra:
